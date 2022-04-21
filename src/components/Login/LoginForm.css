@@ -32,7 +32,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 10%;
+  top: 5%;
 }
 
 .container strong {
@@ -68,18 +68,6 @@
   margin-bottom: 0.95em;
 }
 
-.container button {
-  padding: 0.90em;
-  margin-top: 1.5em;
-  width: 75%;
-  border-radius: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  background: #4f994b;
-  letter-spacing: 0.950px;
-}
-
 .container .error {
   margin-top: 2em;
   font-size: 15px;
@@ -87,8 +75,8 @@
 
 footer {
   margin-top: 4em;
-  height: 400px;
-  opacity: 0.250;
+  opacity: 0.25;
+  height: 163px;
   background-image: url("https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1");
   background-position: center;
   background-repeat: no-repeat;
@@ -96,19 +84,19 @@ footer {
   background-size: cover;
 }
 
-.cedula ion-icon {
-  position: absolute;
-  right: 60px;
-  top: 160px;
-  bottom: 0;
-  opacity: 0.5;
+ion-item {
+  margin-bottom: 2em;
 }
 
-.password ion-icon {
-  position: absolute;
-  right: 60px;
-  top: 215px;
+ion-icon {
+  position: relative;
   bottom: 0;
-  opacity: 0.5;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+ion-label {
+  height: 30px;
 }
 /*# sourceMappingURL=LoginForm.css.map */

@@ -1,14 +1,13 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import LoginForm from '../components/Login/LoginForm';
-import './Home.css';
+import HomePageForm from '../components/HomePage/HomePageForm';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
-      <IonContent fullscreen scroll-y="false">
-        <LoginForm />
+      <IonContent fullscreen>
+        <HomePageForm />
 
       {/* TODO: AGREGAR PAGINA INICIAL/BIENVENIDA CON MENU DESPLEGABLE PARA ACCEDER A LAS CUENTAS, NOTICIAS, ETC... E ICONO DE NOTIFICACIONES  */}
 

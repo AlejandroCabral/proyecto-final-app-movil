@@ -2,27 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
   }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
+}
 
 .container {
   text-align: center;
   position: absolute;
   left: 0;
   right: 0;
-  top: 10%;
+  top: 5%;
 
   strong {
     font-size: 20px;
@@ -54,21 +54,8 @@
     padding: 9px;
     width: 75%;
     margin: {
-      bottom: 0.95em;      
+      bottom: 0.95em;
     }
-  }
-
-
-  button {
-    padding: 0.90em;
-    margin-top: 1.5em;
-    width: 75%;
-    border-radius: 10px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    background: #4f994b;
-    letter-spacing: 0.950px;
   }
 
   .error {
@@ -79,8 +66,8 @@
 
 footer {
   margin-top: 4em;
-  height: 400px;
-  opacity: 0.250;
+  opacity: 0.25;
+  height: 163px;
   background-image: url("https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1");
 
   background-position: center;
@@ -88,22 +75,19 @@ footer {
   background-attachment: fixed;
   background-size: cover;
 }
-.cedula {
-    ion-icon {
-        position: absolute;
-        right: 60px;
-        top: 160px;
-        bottom: 0;
-        opacity: 0.5;
-    }
+
+ion-item {
+  margin-bottom: 2em;
 }
 
-.password {
-    ion-icon {
-        position: absolute;
-        right: 60px;
-        top: 215px;
-        bottom: 0;
-        opacity: 0.5;
-    }
+ion-icon {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+ion-label {
+  height: 30px;
 }
