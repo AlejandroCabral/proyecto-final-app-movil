@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,eAAe,EAAE,IAAI;CACxB",
     "sources": [
         "HomePage.scss"
     ],

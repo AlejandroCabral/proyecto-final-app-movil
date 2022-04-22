@@ -8,9 +8,6 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <HomePageForm />
-
-      {/* TODO: AGREGAR PAGINA INICIAL/BIENVENIDA CON MENU DESPLEGABLE PARA ACCEDER A LAS CUENTAS, NOTICIAS, ETC... E ICONO DE NOTIFICACIONES  */}
-
       </IonContent>
     </IonPage>
   );
