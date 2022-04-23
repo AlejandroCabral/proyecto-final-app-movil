@@ -47,9 +47,9 @@ const LoginForm: React.FC<LoginProps> = () => {
       />
 
       <div className="login-form">
-        <IonItem>
-          <IonLabel>
-            <IonIcon icon={personOutline}></IonIcon>
+        <IonItem className="ion-item">
+          <IonLabel className="ion-label">
+            <IonIcon className="ion-icon" icon={personOutline}></IonIcon>
           </IonLabel>
           <IonInput
             type="text"
@@ -58,9 +58,9 @@ const LoginForm: React.FC<LoginProps> = () => {
           ></IonInput>
         </IonItem>
 
-        <IonItem>
-          <IonLabel>
-            <IonIcon icon={key}></IonIcon>
+        <IonItem className="ion-item">
+          <IonLabel className="ion-label">
+            <IonIcon className="ion-icon" icon={key}></IonIcon>
           </IonLabel>
           <IonInput
             type="password"
@@ -81,10 +81,10 @@ const LoginForm: React.FC<LoginProps> = () => {
         </div>
 
         <div className="error">
-          <a href="#O">¿Tienes problemas para Iniciar Sesión?</a>
+          <a className="reference" href="#O">¿Tienes problemas para Iniciar Sesión?</a>
         </div>
       </div>
-      <footer>
+      <footer className="footer">
       </footer>
     </div>
   );

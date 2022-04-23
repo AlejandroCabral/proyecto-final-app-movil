@@ -1,10 +1,5 @@
 import {
-  heart,
-  home,
-  informationCircle,
   mail,
-  people,
-  videocam,
 } from "ionicons/icons";
 import "./HomePage.css";
 import {
@@ -18,25 +13,16 @@ import {
   IonIcon,
   IonLabel,
   IonApp,
-  IonButton,
   IonButtons,
   IonMenuButton,
-  IonMenuToggle,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
 } from "@ionic/react";
-import { Route, Redirect } from "react-router";
 import React from "react";
-import { IonReactRouter } from "@ionic/react-router";
-import Login from "../../components/Login/LoginForm";
 
 interface HomePageProps {}
 
 const HomePageForm: React.FC<HomePageProps> = () => {
   return (
-    <IonApp>
+    <IonApp className="fade">
       <IonMenu side="start" content-id="main-content">
         <IonHeader>
           <IonToolbar>
@@ -77,44 +63,32 @@ const HomePageForm: React.FC<HomePageProps> = () => {
               {/* <IonIcon name="paIerplane" slot="start"></IonIcon> */}
               <IonLabel>Ayuda</IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="hearT" slot="start"></IonIcon> */}
-              <IonLabel>Tasas</IonLabel>
-            </IonItem>
           </IonList>
         </IonContent>
       </IonMenu>
 
-      <div className="ion-page" id="main-content">
-        <IonHeader>
-          <IonToolbar>
+      <div id="main-content">
+        <IonHeader class="ion-no-border">
+          <IonToolbar color="translucent">
             <IonButtons slot="start">
               <IonMenuButton></IonMenuButton>
             </IonButtons>
-            <IonTitle>Inbox</IonTitle>
           </IonToolbar>
         </IonHeader>
 
-        <IonApp>
-          <IonReactRouter>
-            <IonTabs>
-              <IonRouterOutlet>
-                <Route exact path="/login">
-                  <Login />
-                </Route>
-              </IonRouterOutlet>
-              <IonTabBar slot="bottom">
-                <IonTabButton tab="login" href="/login" layout="icon-top">
-                  <IonLabel>Login</IonLabel>
-                  <IonIcon icon={heart} />
-                </IonTabButton>
-              </IonTabBar>
-            </IonTabs>
-          </IonReactRouter>
-        </IonApp>
+        <div className="header-image">
+          <img
+            src="https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1"
+            alt="logo"
+          />
+          <p> Bryan</p>
+          <span>Última conexión:</span>
+        </div>
       </div>
     </IonApp>
   );
 };
 
 export default HomePageForm;
+
+// https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1
