@@ -6,7 +6,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen scroll-y="true">
         <HomePageForm />
       </IonContent>
     </IonPage>
