@@ -1,0 +1,15 @@
+.Container-P{
+    border: 5px solid #c1c0c1;
+    background-color: white;
+    padding: 50px;
+    margin: 50px;
+}
+
+.elementor-post__read-more{
+
+    color:#61D2BA;
+}
+
+.elementor-post__title{
+    color: black;
+}
