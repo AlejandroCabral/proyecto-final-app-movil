@@ -81,7 +81,7 @@ const LoginForm: React.FC<LoginProps> = () => {
         </div>
 
         <div className="error">
-          <a className="reference" href="#O">¿Tienes problemas para Iniciar Sesión?</a>
+          <a className="reference" href="../pages/News.tsx">¿Tienes problemas para Iniciar Sesión?</a>
 
         </div>
       </div>
