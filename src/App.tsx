@@ -13,6 +13,8 @@ import { IonReactRouter } from "@ionic/react-router";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import News from "./pages/News";
+import Cuentas from "./pages/Cuenta";
+import Contactos from "./pages/Contacto";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -50,6 +52,12 @@ const App: React.FC = () => (
             </Route>
             <Route exact path="/news">
               <News />
+            </Route>
+            <Route exact path="/contactos">
+              <Contactos />
+            </Route>
+            <Route exact path="/cuentas">
+              <Cuentas />
             </Route>
             <Route exact path="/">
               <Redirect to="/login" />
