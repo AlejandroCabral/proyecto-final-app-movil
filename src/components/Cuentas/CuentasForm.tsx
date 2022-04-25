@@ -1,4 +1,4 @@
-import "./CuentasForm.css";
+import "./Cuentas.css";
 import { IonIcon, IonInput, IonItem, IonLabel, IonButton } from "@ionic/react";
 import { personOutline, key } from "ionicons/icons";
 import { useState } from "react";

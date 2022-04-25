@@ -65,15 +65,15 @@ const App: React.FC = () => (
           </Switch>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="solicitudes" href="/solicitudes" layout="icon-top">
             <IonLabel>Solicitud</IonLabel>
             <IonIcon icon={newspaperOutline} color="success" />
           </IonTabButton>
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="contactos" href="/contactos" layout="icon-top">
             <IonLabel>Contacto</IonLabel>
             <IonIcon icon={callOutline} color="success" />
           </IonTabButton>
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="whatsapp" href="/whatsapp" layout="icon-top">
             <IonLabel>WhatsApp</IonLabel>
             <IonIcon icon={logoWhatsapp} color="success" />
           </IonTabButton>
