@@ -1,29 +1,49 @@
+// * Imports
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// * Variables
 
 $success-color: #3dd67a;
 $green-color: green;
-$font-family: 'Roboto', sans-serif;
+$font-family: "Roboto", sans-serif;
+
+
+// * Mixins
+@mixin parrafo {
+  font-family: $font-family;
+  font-weight: 600;
+  color: $success-color;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  &::before {
+    content: "Hola";
+    color: #2b7de9;
+  }
+}
+
+@mixin position-body-section($number) {
+  position: relative;
+  left: $number;
+  color: #a8a7a7;
+}
+
+// * Selectors & stuffs
 
 .header-image-2 {
   width: 100%;
+
   img {
     opacity: 0.25;
     position: absolute;
     top: 0;
     height: 190px;
   }
+
   .parrafo {
     margin-top: 2.8em;
-    font-family: $font-family;
-    font-weight: 600;
-    color: $success-color;
-    font-size: 17px;
     text-align: center;
-    letter-spacing: 0.8px;
-    &::before {
-      content: "Hola";
-      color: #2b7de9;
-    }
+    @include parrafo;
   }
 }
 
@@ -37,7 +57,7 @@ $font-family: 'Roboto', sans-serif;
 
 ion-menu-button {
   color: $green-color;
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .body-section {
@@ -57,7 +77,6 @@ ion-menu-button {
       position: relative;
       top: 2px;
     }
-
   }
 
   .p-body-section {
@@ -65,47 +84,61 @@ ion-menu-button {
   }
 
   .p-body-section-left {
-    position: relative;
-    left: 65px;
-    color: #a8a7a7;
+    @include position-body-section(65px);
   }
 
   .p-body-section-left-prestamos {
-    position: relative;
-    left: 85px;
-    color: #a8a7a7;
+    @include position-body-section(85px);
   }
 
   .p-body-section-left-inversiones {
-    position: relative;
-    left: 60px;
-    color: #a8a7a7;
+    @include position-body-section(60px);
   }
 
   .p-body-section-left-gerencial {
-    position: relative;
-    left: 75px;
-    color: #a8a7a7;
+    @include position-body-section(75px);
   }
 
-  .p-body-section, .p-body-section-left, .p-body-section-left-inversiones, .p-body-section-left-prestamos, .p-body-section-left-gerencial {
+  .p-body-section,
+  .p-body-section-left,
+  .p-body-section-left-inversiones,
+  .p-body-section-left-prestamos,
+  .p-body-section-left-gerencial {
     font-size: 13.5px;
     margin-top: 5px;
   }
-  
+
   .span-body-section-left {
     left: 182px;
     font-weight: bold;
   }
 
-  .span-body-section, .span-body-section-left {
+  .span-body-section,
+  .span-body-section-left {
     position: relative;
     bottom: 8px;
-    font-size: 13px;    
+    font-size: 13px;
   }
 
   .ion-item-body-section {
     margin-bottom: 25px;
   }
+}
 
+.unParrafo {
+  @include parrafo;
+}
+
+ion-list {
+  ion-icon {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.boton-cerrar-sesion {
+  width: 100px;
+  border: 1px solid $success-color;
+  border-radius: 50px;
+  margin: 30px auto;
 }

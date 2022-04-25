@@ -12,11 +12,11 @@
 
 .header-image-2 .parrafo {
   margin-top: 2.8em;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #3dd67a;
   font-size: 17px;
-  text-align: center;
   letter-spacing: 0.8px;
 }
 
@@ -84,7 +84,11 @@ ion-menu-button {
   color: #a8a7a7;
 }
 
-.body-section .p-body-section, .body-section .p-body-section-left, .body-section .p-body-section-left-inversiones, .body-section .p-body-section-left-prestamos, .body-section .p-body-section-left-gerencial {
+.body-section .p-body-section,
+.body-section .p-body-section-left,
+.body-section .p-body-section-left-inversiones,
+.body-section .p-body-section-left-prestamos,
+.body-section .p-body-section-left-gerencial {
   font-size: 13.5px;
   margin-top: 5px;
 }
@@ -94,7 +98,8 @@ ion-menu-button {
   font-weight: bold;
 }
 
-.body-section .span-body-section, .body-section .span-body-section-left {
+.body-section .span-body-section,
+.body-section .span-body-section-left {
   position: relative;
   bottom: 8px;
   font-size: 13px;
@@ -102,5 +107,30 @@ ion-menu-button {
 
 .body-section .ion-item-body-section {
   margin-bottom: 25px;
+}
+
+.unParrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #3dd67a;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+}
+
+.unParrafo::before {
+  content: "Hola";
+  color: #2b7de9;
+}
+
+ion-list ion-icon {
+  position: relative;
+  top: 2px;
+}
+
+.boton-cerrar-sesion {
+  width: 100px;
+  border: 1px solid #3dd67a;
+  border-radius: 50px;
+  margin: 30px auto;
 }
 /*# sourceMappingURL=HomePage.css.map */
