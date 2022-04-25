@@ -1,4 +1,4 @@
-import './css/News.css'
+import './News.css';
 import { IonIcon } from '@ionic/react';
 
 interface NewsProps {}
