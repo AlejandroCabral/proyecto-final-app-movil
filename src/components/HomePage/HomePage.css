@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.header-image-2 {
+  width: 100%;
+}
+
+.header-image-2 img {
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  height: 190px;
+}
+
+.header-image-2 .parrafo {
+  margin-top: 2.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #3dd67a;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.header-image-2 .parrafo::before {
+  content: "Hola";
+  color: #2b7de9;
+}
+
+#unSpan {
+  position: relative;
+  left: 5em;
+  right: 0;
+  bottom: 0.5em;
+  font-size: 14px;
+}
+
+ion-menu-button {
+  color: green;
+  margin-top: 15px;
+}
+
+.body-section {
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.body-section .header-contenedor {
+  color: #3dd67a;
+  font-weight: 600;
+}
+
+.body-section .header-contenedor ion-icon {
+  position: relative;
+  top: 2px;
+}
+
+.body-section .p-body-section {
+  color: #3dd67a;
+}
+
+.body-section .p-body-section-left {
+  position: relative;
+  left: 65px;
+  color: #a8a7a7;
+}
+
+.body-section .p-body-section-left-prestamos {
+  position: relative;
+  left: 85px;
+  color: #a8a7a7;
+}
+
+.body-section .p-body-section-left-inversiones {
+  position: relative;
+  left: 60px;
+  color: #a8a7a7;
+}
+
+.body-section .p-body-section-left-gerencial {
+  position: relative;
+  left: 75px;
+  color: #a8a7a7;
+}
+
+.body-section .p-body-section, .body-section .p-body-section-left, .body-section .p-body-section-left-inversiones, .body-section .p-body-section-left-prestamos, .body-section .p-body-section-left-gerencial {
+  font-size: 13.5px;
+  margin-top: 5px;
+}
+
+.body-section .span-body-section-left {
+  left: 182px;
+  font-weight: bold;
+}
+
+.body-section .span-body-section, .body-section .span-body-section-left {
+  position: relative;
+  bottom: 8px;
+  font-size: 13px;
+}
+
+.body-section .ion-item-body-section {
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=HomePage.css.map */
