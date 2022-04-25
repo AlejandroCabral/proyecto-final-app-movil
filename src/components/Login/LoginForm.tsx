@@ -25,7 +25,7 @@ const LoginForm: React.FC<LoginProps> = () => {
         </div>
 
         <div className="error">
-          <a href="#O">¿Tienes problemas para Iniciar Sesión?</a>
+          <a href="./Screen/News.tsx">¿Tienes problemas para Iniciar Sesión?</a>
         </div>
 
       </div>
