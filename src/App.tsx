@@ -13,6 +13,8 @@ import { IonReactRouter } from "@ionic/react-router";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import News from "./pages/News";
+import Cuentas from "./pages/Cuenta";
+import Contactos from "./pages/Contacto";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -51,21 +53,27 @@ const App: React.FC = () => (
             <Route exact path="/news">
               <News />
             </Route>
+            <Route exact path="/contactos">
+              <Contactos />
+            </Route>
+            <Route exact path="/cuentas">
+              <Cuentas />
+            </Route>
             <Route exact path="/">
               <Redirect to="/login" />
             </Route>
           </Switch>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="solicitudes" href="/solicitudes" layout="icon-top">
             <IonLabel>Solicitud</IonLabel>
             <IonIcon icon={newspaperOutline} color="success" />
           </IonTabButton>
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="contactos" href="/contactos" layout="icon-top">
             <IonLabel>Contacto</IonLabel>
             <IonIcon icon={callOutline} color="success" />
           </IonTabButton>
-          <IonTabButton layout="icon-top">
+          <IonTabButton tab="whatsapp" href="/whatsapp" layout="icon-top">
             <IonLabel>WhatsApp</IonLabel>
             <IonIcon icon={logoWhatsapp} color="success" />
           </IonTabButton>

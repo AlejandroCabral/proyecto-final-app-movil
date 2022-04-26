@@ -1,8 +1,13 @@
 import {
-  mail,
+  powerOutline,
   walletOutline,
   cashOutline,
   businessOutline,
+  newspaperOutline,
+  calculatorOutline,
+  earthOutline,
+  folderOpenOutline,
+  helpCircleOutline,
 } from "ionicons/icons";
 import "./HomePage.css";
 import {
@@ -33,44 +38,73 @@ const HomePageForm: React.FC<HomePageProps> = () => {
   return (
     <IonApp className="fade">
       <IonMenu side="start" content-id="main-content">
-        <IonHeader>
+        <IonHeader class="ion-no-border">
           <IonToolbar>
-            <IonTitle>Menu</IonTitle>
+            <IonTitle>
+              <img src="https://www.coopdgii.com/wp-content/uploads/2021/04/Sobre-sonotro-1.png" alt="coopdgii logo" style={{marginTop: '5px'}}/>
+              <p className="unParrafo"> Bryan</p>
+              </IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
           <IonList lines="none">
-            <IonItem routerLink="/login" routerDirection="none">
+            <IonItem routerLink="/cuentas" routerDirection="none">
               <IonLabel>
-                <IonIcon icon={mail} color="medium" slot="start" /> Cuentas
+                <IonIcon
+                  icon={walletOutline}
+                  color="success"
+                  slot="start"
+                />{"  "}
+                Cuentas
               </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="paIerplane" slot="start"></IonIcon> */}
-              <IonLabel>Prestamos</IonLabel>
+            <IonItem routerLink="/prestamos" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={cashOutline} color="success" slot="start"></IonIcon>{"  "}
+                  Prestamos
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="hearT" slot="start"></IonIcon> */}
-              <IonLabel>Inversiones</IonLabel>
+            <IonItem routerLink="/certificados" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={businessOutline} color="success" slot="start"></IonIcon>{"  "}
+                  Certificados
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="archive" slot="start"></IonIcon> */}
-              <IonLabel>Solicitudes</IonLabel>
+            <IonItem routerLink="/solicitudes" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={newspaperOutline} color="success" slot="start"></IonIcon>{"  "}
+                Solicitudes
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="Trash" slot="start"></IonIcon> */}
-              <IonLabel>Descuentos</IonLabel>
+            <IonItem routerLink="/descuentos" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={calculatorOutline} color="success" slot="start"></IonIcon>{"  "}
+                Descuentos
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="warning" slot="start"></IonIcon> */}
-              <IonLabel>Noticias</IonLabel>
+            <IonItem routerLink="/news" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={earthOutline} color="success" slot="start"></IonIcon>{"  "}
+                Noticias
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              <IonLabel>Sugerencias</IonLabel>
+            <IonItem routerLink="/sugerencias" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={folderOpenOutline} color="success" slot="start"></IonIcon>{"  "}
+                Sugerencias
+              </IonLabel>
             </IonItem>
-            <IonItem>
-              {/* <IonIcon name="paIerplane" slot="start"></IonIcon> */}
-              <IonLabel>Ayuda</IonLabel>
+            <IonItem routerLink="/ayuda" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={helpCircleOutline} color="success" slot="start"></IonIcon>{"  "}
+                Ayuda
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/login" routerDirection="none" className="boton-cerrar-sesion">
+              <IonLabel>
+                <IonIcon icon={powerOutline} color="success" slot="start"></IonIcon>{"  "}
+                Salir
+              </IonLabel>
             </IonItem>
           </IonList>
         </IonContent>
@@ -114,7 +148,7 @@ const HomePageForm: React.FC<HomePageProps> = () => {
           <IonItem className="ion-item-body-section">
             <div>
               <h6 className="header-contenedor">
-                <IonIcon color="success" icon={businessOutline} /> Inversión
+                <IonIcon color="success" icon={businessOutline} /> Certificados
               </h6>
               <IonRow>
                 <p className="p-body-section">Certificado Financiero</p>
