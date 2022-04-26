@@ -1,17 +1,17 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import CuentasForm from '../components/Cuentas/CuentasForm';
-import './Cuenta.css';
+import SugerenciasForm from '../components/Sugerencias/SugerenciasForm';
+import './Sugerencias.css';
 
-const Cuenta: React.FC = () => {
+const Sugerencias: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
-        <CuentasForm />
+        <SugerenciasForm />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Cuenta;
+export default Sugerencias;

@@ -23,6 +23,7 @@ import {
   helpCircleOutline,
   powerOutline,
   homeOutline,
+  settingsOutline,
 } from "ionicons/icons";
 import "./News.css";
 
@@ -46,13 +47,10 @@ const News: React.FC<NewsProps> = () => {
         </IonHeader>
         <IonContent>
           <IonList lines="none">
-          <IonItem routerLink="/home" routerDirection="none">
+            <IonItem routerLink="/home" routerDirection="none">
               <IonLabel>
-                <IonIcon
-                  icon={homeOutline}
-                  color="success"
-                  slot="start"
-                />{"  "}
+                <IonIcon icon={homeOutline} color="success" slot="start" />
+                {"  "}
                 Inicio
               </IonLabel>
             </IonItem>
@@ -129,7 +127,7 @@ const News: React.FC<NewsProps> = () => {
                 Sugerencias
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/ayuda" routerDirection="none">
+            <IonItem routerLink="/contactos" routerDirection="none">
               <IonLabel>
                 <IonIcon
                   icon={helpCircleOutline}
@@ -138,6 +136,17 @@ const News: React.FC<NewsProps> = () => {
                 ></IonIcon>
                 {"  "}
                 Ayuda
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/configuracion" routerDirection="none">
+              <IonLabel>
+                <IonIcon
+                  icon={settingsOutline}
+                  color="success"
+                  slot="start"
+                ></IonIcon>
+                {"  "}
+                Configuracion
               </IonLabel>
             </IonItem>
             <IonItem
@@ -159,6 +168,7 @@ const News: React.FC<NewsProps> = () => {
         </IonContent>
       </IonMenu>
 
+      
       <IonContent>
         <div id="main-content">
           <IonHeader class="ion-no-border">

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-image-5 img {
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  height: 150px;
+  z-index: 0;
+}
+
+.header-image-5 p {
+  margin-top: 5em;
+  text-align: center;
+  font-weight: 900;
+  color: #2b7de9;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  position: relative;
+  bottom: 70px;
+}
+
+.main-body-container h6 {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.main-body-container span {
+  position: relative;
+  left: 155px;
+  opacity: 0.5;
+}
+
+.square-icons .facebook, .square-icons .twitter, .square-icons .instagram {
+  background-color: #d1d1d1;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  left: 50px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.square-icons .facebook ion-icon, .square-icons .twitter ion-icon, .square-icons .instagram ion-icon {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.square-icons .facebook a, .square-icons .twitter a, .square-icons .instagram a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.main-footer img {
+  margin-left: 60px;
+}
+
+.main-footer p:nth-child(odd), .main-footer span {
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.main-footer h6 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  opacity: 0.6;
+  margin-top: 50px;
+}
+
+.loc {
+  position: absolute;
+  bottom: 64px;
+  left: 200px;
+}
+/*# sourceMappingURL=Sugerencias.css.map */

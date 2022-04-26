@@ -18,6 +18,9 @@ import Contactos from "./pages/Contacto";
 import Requests from "./pages/Request_Pass";
 import AhorroForm from "./components/Ahorro/AhorroForm";
 import PrestamosForm from "./components/Prestamo/PrestamosForm";
+import Certificados from "./pages/Certificados";
+import Sugerencias from "./pages/Sugerencias";
+
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -59,6 +62,9 @@ const App: React.FC = () => (
             <Route exact path="/contactos">
               <Contactos />
             </Route>
+            <Route exact path="/certificados">
+              <Certificados />
+            </Route>
             <Route exact path="/cuentas">
               <AhorroForm />
             </Route>
@@ -71,6 +77,9 @@ const App: React.FC = () => (
             </Route>
             <Route exact path="/request">
               <Requests/>
+            </Route>
+            <Route exact path="/sugerencias">
+              <Sugerencias />
             </Route>
             <Route exact path="/">
               <Redirect to="/login" />

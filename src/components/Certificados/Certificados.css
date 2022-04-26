@@ -1,0 +1,71 @@
+.header-title-toolbar ion-title {
+  color: #2b7de9;
+  font-weight: bold;
+  position: relative;
+  left: 40px;
+  top: 8px;
+}
+
+.contenedor-main-body {
+  position: relative;
+  top: 25px;
+  width: 75%;
+  height: 100px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.contenedor-main-body .icono-main-body {
+  background: #2762AB;
+  width: 32px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.contenedor-main-body .icono-main-body ion-icon {
+  font-size: 25px;
+  position: relative;
+  top: 35px;
+  left: 3px;
+  color: white;
+}
+
+.contenedor-main-body .main-body-rightside {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+}
+
+.contenedor-main-body .main-body-rightside h5 {
+  font-weight: bold;
+  color: #2b7de9;
+  font-size: 16px;
+}
+
+.contenedor-main-body .main-body-rightside p, .contenedor-main-body .main-body-rightside span {
+  color: #848484;
+  position: relative;
+}
+
+.contenedor-main-body .main-body-rightside p {
+  bottom: 7px;
+}
+
+.contenedor-main-body .main-body-rightside span {
+  bottom: 25px;
+  font-size: 13px;
+}
+
+.contenedor-main-body .main-body-rightside strong {
+  position: relative;
+  bottom: 20px;
+}
+
+.certificados-content main {
+  background-color: #ebebeb;
+  height: 100%;
+  position: relative;
+  bottom: 40px;
+}
+/*# sourceMappingURL=Certificados.css.map */
