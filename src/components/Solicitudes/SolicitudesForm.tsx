@@ -26,14 +26,18 @@ import {
   powerOutline,
   walletOutline,
   homeOutline,
-  logoTwitter,
-  logoFacebook,
-  logoInstagram,
 } from "ionicons/icons";
+import { useState } from "react";
 
 interface SolicitudesProps {}
 
 const SolicitudesForm: React.FC<SolicitudesProps> = () => {
+
+  let [fecha] = useState<string>();
+
+  let hoy = new Date();
+  fecha = hoy.toLocaleString();
+
   return (
     <IonApp className="fade">
       <IonMenu side="start" content-id="main-content">
@@ -182,75 +186,117 @@ const SolicitudesForm: React.FC<SolicitudesProps> = () => {
             </IonToolbar>
           </IonHeader>
 
-          <div className="header-image-5">
-            <img
-              src="https://coopdgii.com/wp-content/uploads/2021/03/Banner.png"
-              alt="logo"
-            />
-            <p>SUGERENCIAS</p>
-          </div>
+          <div className="header-image-2">
+          <img
+            src="https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1"
+            alt="logo"
+          />
+          <p className="parrafo"> Bryan</p>
+          <span id="unSpan">Última conexión: {fecha}</span>
+        </div>
 
-          <main className="main-body-container">
-            <h6>Visita nuestra redes sociales</h6>
-            <span>@coopdgii</span>
-
-            <div className="square-icons">
+        <section className="body-section-solicitud">
+          <IonItem className="ion-item-body-section-solicitud">
+            <div>
+              <h6 className="header-contenedor-solicitud">
+                <IonIcon color="success" icon={cashOutline} /> Solicitud Préstamos
+              </h6>
               <IonRow>
-                <div className="facebook">
-                  <a
-                    href="https://www.facebook.com/coopdgii"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoFacebook} />
-                  </a>
-                </div>
-                <div className="twitter">
-                  <a
-                    href="https://twitter.com/coopdgii"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoTwitter} />
-                  </a>
-                </div>
-                <div className="instagram">
-                  <a
-                    href="https://www.instagram.com/coopdgii/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoInstagram} />
-                  </a>
-                </div>
+                <p className="p-body-section-solicitud">Código</p>
+                <p className="p-body-section-left-prestamos-solicitud">
+                  Monto
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud">1000005</span>
+                <span className="span-body-section-left-solicitud">5,234RD$</span>
+              </IonRow>
+              <IonRow>
+                <p className="p-body-section-solicitud">Información del Garante</p>
+                <p className="p-body-section-left-gerencial-solicitud">
+                  Nombre Completo
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud">Persona Física</span>
+                <span className="span-body-section-lefts-solicitud">Juan Peguero</span>
+              </IonRow>
+
+
+              <IonRow>
+                <p className="p-body-section-solicitud-2">Cédula</p>
+                <p className="p-body-section-left-prestamos-solicitud-2">
+                  Sueldo
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud-2">06515897641</span>
+                <span className="span-body-section-left-solicitud-2">35,000RD$</span>
+              </IonRow>
+              <IonRow>
+                <p className="p-body-section-solicitud-2">Monto Ahorrado</p>
+                <p className="p-body-section-left-gerencial-solicitud-2">
+                  Monto a Garantizar
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud-2">60,000RD$</span>
+                <span className="span-body-section-lefts-solicitud-2">15,000RD$</span>
               </IonRow>
             </div>
-          </main>
-          <footer className="main-footer">
-            <img
-              src="https://coopdgii.com/wp-content/uploads/2019/10/Logo-Pagina-Web1.png"
-              alt="logo coopdgii"
-            />
+          </IonItem>
 
-            <h6>Contactos</h6>
+          
+          <IonItem className="ion-item-body-section-solicitud">
+            <div>
+              <h6 className="header-contenedor-solicitud">
+                <IonIcon color="success" icon={cashOutline} /> Solicitud Préstamos
+              </h6>
+              <IonRow>
+                <p className="p-body-section-solicitud">Código</p>
+                <p className="p-body-section-left-prestamos-solicitud">
+                  Monto
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud">1087605</span>
+                <span className="span-body-section-left-solicitud">1,570RD$</span>
+              </IonRow>
+              <IonRow>
+                <p className="p-body-section-solicitud">Información del Garante</p>
+                <p className="p-body-section-left-gerencial-solicitud">
+                  Nombre Completo
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud">Persona Física</span>
+                <span className="span-body-section-lefts-solicitud">Juan Peguero</span>
+              </IonRow>
 
-            <p>WhatsApp</p>
-            <span>(849)-451-0798</span>
 
-            <p>Oficina</p>
-            <span>(809)-287-2700</span>
-            <br />
-            <span>info@coopdgii.com</span>
-
-            <div className="loc">
-              <h6>Localización</h6>
-              <span>Av. Pedro Henríquez Ureña #29 Gazcue</span>
-              <br />
-              <span>Santo Domingo</span>
-              <br />
-              <span>República Dominicana</span>
+              <IonRow>
+                <p className="p-body-section-solicitud-2">Cédula</p>
+                <p className="p-body-section-left-prestamos-solicitud-2">
+                  Sueldo
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud-2">06515897641</span>
+                <span className="span-body-section-left-solicitud-2">20,000RD$</span>
+              </IonRow>
+              <IonRow>
+                <p className="p-body-section-solicitud-2">Monto Ahorrado</p>
+                <p className="p-body-section-left-gerencial-solicitud-2">
+                  Monto a Garantizar
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section-solicitud-2">10,000RD$</span>
+                <span className="span-body-section-lefts-solicitud-2">55,000RD$</span>
+              </IonRow>
             </div>
-          </footer>
+          </IonItem>
+        </section>
         </div>
       </IonContent>
     </IonApp>

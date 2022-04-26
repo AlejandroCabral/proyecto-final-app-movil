@@ -40,7 +40,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import { newspaperOutline, callOutline, logoWhatsapp } from "ionicons/icons";
+import { newspaperOutline, callOutline } from "ionicons/icons";
 
 setupIonicReact();
 
@@ -96,10 +96,6 @@ const App: React.FC = () => (
           <IonTabButton tab="contactos" href="/contactos" layout="icon-top">
             <IonLabel>Contacto</IonLabel>
             <IonIcon icon={callOutline} color="success" />
-          </IonTabButton>
-          <IonTabButton tab="whatsapp" href="/whatsapp" layout="icon-top">
-            <IonLabel>WhatsApp</IonLabel>
-            <IonIcon icon={logoWhatsapp} color="success" />
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

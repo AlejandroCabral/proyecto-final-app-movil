@@ -153,9 +153,9 @@ const ContactosForm: React.FC<ContactosProps> = () => {
                 </div>
                 <div className="main-body-rightside">
                     <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
+                    <p>N° 1401278</p>
                     <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
+                    <strong>25,250.00 RD$</strong>
                 </div>
             </div>
 
@@ -165,9 +165,9 @@ const ContactosForm: React.FC<ContactosProps> = () => {
                 </div>
                 <div className="main-body-rightside">
                     <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
+                    <p>N° 987574</p>
                     <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
+                    <strong>1,005.02 RD$</strong>
                 </div>
             </div>
 
@@ -176,10 +176,10 @@ const ContactosForm: React.FC<ContactosProps> = () => {
                     <IonIcon icon={fileTraySharp} />
                 </div>
                 <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
+                    <h5>CERTIFICADOS DE DEPÓSITO</h5>
+                    <p>N° 1497274</p>
                     <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
+                    <strong>100.00 RD$</strong>
                 </div>
             </div>
 
@@ -188,10 +188,10 @@ const ContactosForm: React.FC<ContactosProps> = () => {
                     <IonIcon icon={fileTraySharp} />
                 </div>
                 <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
+                    <h5>CERTIFICADOS DE DEPÓSITO</h5>
+                    <p>N° 1401589</p>
                     <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
+                    <strong>500,278.57 RD$</strong>
                 </div>
             </div>
           </main>

@@ -29,6 +29,7 @@ import {
   logoTwitter,
   logoFacebook,
   logoInstagram,
+  fileTraySharp,
 } from "ionicons/icons";
 
 interface DescuentosProps {}
@@ -172,86 +173,82 @@ const DescuentosForm: React.FC<DescuentosProps> = () => {
         </IonContent>
       </IonMenu>
 
-      <IonContent scroll-y="true">
+      <IonContent className="certificados-content">
         <div id="main-content">
           <IonHeader class="ion-no-border header-title-toolbar">
             <IonToolbar color="translucent">
               <IonButtons slot="start">
                 <IonMenuButton></IonMenuButton>
+                <IonTitle>Mis Descuentos</IonTitle>
               </IonButtons>
             </IonToolbar>
           </IonHeader>
+        </div>
 
-          <div className="header-image-5">
-            <img
-              src="https://coopdgii.com/wp-content/uploads/2021/03/Banner.png"
-              alt="logo"
-            />
-            <p>SUGERENCIAS</p>
+        <main>
+          <div className="contenedor-main-body">
+            <div className="icono-main-body">
+              <IonIcon icon={fileTraySharp} />
+            </div>
+            <div className="main-body-rightside">
+              <h5>NORMALES</h5>
+              <p>22/04/2022</p>
+              <span>JOHN DOE</span>
+              <br />
+              <strong>4,574.19 RD$</strong>
+            </div>
+          </div>
+          <div className="contenedor-main-body">
+            <div className="icono-main-body">
+              <IonIcon icon={fileTraySharp} />
+            </div>
+            <div className="main-body-rightside">
+              <h5>NORMALES</h5>
+              <p>22/04/2022</p>
+              <span>JOHN DOE</span>
+              <br />
+              <strong>9,095.71 RD$</strong>
+            </div>
           </div>
 
-          <main className="main-body-container">
-            <h6>Visita nuestra redes sociales</h6>
-            <span>@coopdgii</span>
-
-            <div className="square-icons">
-              <IonRow>
-                <div className="facebook">
-                  <a
-                    href="https://www.facebook.com/coopdgii"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoFacebook} />
-                  </a>
-                </div>
-                <div className="twitter">
-                  <a
-                    href="https://twitter.com/coopdgii"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoTwitter} />
-                  </a>
-                </div>
-                <div className="instagram">
-                  <a
-                    href="https://www.instagram.com/coopdgii/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <IonIcon icon={logoInstagram} />
-                  </a>
-                </div>
-              </IonRow>
+          <div className="contenedor-main-body">
+            <div className="icono-main-body">
+              <IonIcon icon={fileTraySharp} />
             </div>
-          </main>
-          <footer className="main-footer">
-            <img
-              src="https://coopdgii.com/wp-content/uploads/2019/10/Logo-Pagina-Web1.png"
-              alt="logo coopdgii"
-            />
-
-            <h6>Contactos</h6>
-
-            <p>WhatsApp</p>
-            <span>(849)-451-0798</span>
-
-            <p>Oficina</p>
-            <span>(809)-287-2700</span>
-            <br />
-            <span>info@coopdgii.com</span>
-
-            <div className="loc">
-              <h6>Localización</h6>
-              <span>Av. Pedro Henríquez Ureña #29 Gazcue</span>
+            <div className="main-body-rightside">
+              <h5>PLAN FUNERAL</h5>
+              <p>22/04/2022</p>
+              <span>JOHN DOE</span>
               <br />
-              <span>Santo Domingo</span>
-              <br />
-              <span>República Dominicana</span>
+              <strong>100.00 RD$</strong>
             </div>
-          </footer>
-        </div>
+          </div>
+
+          <div className="contenedor-main-body">
+            <div className="icono-main-body">
+              <IonIcon icon={fileTraySharp} />
+            </div>
+            <div className="main-body-rightside">
+              <h5>APORTACIONES</h5>
+              <p>22/04/2022</p>
+              <span>JOHN DOE</span>
+              <br />
+              <strong>2,000.00 RD$</strong>
+            </div>
+          </div>
+          <div className="contenedor-main-body">
+            <div className="icono-main-body">
+              <IonIcon icon={fileTraySharp} />
+            </div>
+            <div className="main-body-rightside">
+              <h5>NORMALES</h5>
+              <p>22/04/2022</p>
+              <span>JOHN DOE</span>
+              <br />
+              <strong>4,574.19 RD$</strong>
+            </div>
+          </div>          
+        </main>
       </IonContent>
     </IonApp>
   );
