@@ -1,13 +1,119 @@
+// * Imports
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// * Variables
+$success-color: #3dd67a;
+$font-family: "Roboto", sans-serif;
+$header-color: #4F4F4F;
+// * Mixins
 @mixin pictures($opacity) {
-    width: 100%;
-    opacity: $opacity;
-    position: absolute;
-    top: 0;
-    height: 200px;
-  }
+  width: 100%;
+  opacity: $opacity;
+  position: absolute;
+  top: 0;
+  height: 220px;
+}
+
+// * Selectors & stuffs
+
+* {
+    font-family: $font-family;
+}
 
 .header-image-3 {
-    img {
-        @include pictures(1);
+  img {
+    @include pictures(0.25);
+    z-index: 0;
+  }
+  span {
+    position: relative;
+    left: 10em;
+    right: 0;
+    top: 5em;
+    bottom: 0.5em;
+    font-size: 15px;
+    font-weight: 600;
+    color: green;
+  }
+  p {
+    margin-top: 5em;
+    text-align: center;
+    font-weight: 900;
+    color: #2b7de9;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+  }
+}
+
+.main-body {
+    padding: 10px;    
+    
+    .h3-body {
+        color: $header-color;
+        font-weight: 600;
+        width: 250px;
+        text-align: center;
+        font-size: 25px;
+        margin: {
+            top: 40px;
+            left: auto; 
+            right: auto;
+        }
     }
+
+    p {
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        font-style: italic;
+        margin: {
+            top: 20px;
+            bottom: 45px;
+        }
+    }
+}
+
+.img-item-body {
+    width: 130px; 
+    height: 130px;    
+}
+
+.headers-row {
+    position: absolute;
+    left: 130px;
+    top: 10px;
+    color: $header-color;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.headers-span {
+    span {
+        font-style: italic;
+        color: $success-color;
+        position: absolute;
+        top: 55px;
+        width: 150px;
+    }
+}
+
+em {
+    margin-top: 10px;
+    color: #5a5a5a;
+}
+
+.telephone, .mail {
+    margin-top: 20px;
+    ion-icon {
+        position: relative; 
+        top: 2px;
+    }
+}
+
+.mail {
+    margin-left: 10px;
+}
+
+.ion-item-main-body {
+    margin-bottom: 50px;
 }
