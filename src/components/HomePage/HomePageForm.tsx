@@ -115,7 +115,7 @@ const HomePageForm: React.FC<HomePageProps> = () => {
             <IonItem routerLink="/request" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={settingsOutline} color="success" slot="start"></IonIcon>{"  "}
-                Configuracion
+                Configuracion(Cambio de contra.)
               </IonLabel>
             </IonItem>
             <IonItem routerLink="/login" routerDirection="none" className="boton-cerrar-sesion">

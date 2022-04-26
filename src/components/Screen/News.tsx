@@ -22,6 +22,7 @@ import {
   folderOpenOutline,
   helpCircleOutline,
   powerOutline,
+  homeOutline,
 } from "ionicons/icons";
 import "./News.css";
 
@@ -45,6 +46,16 @@ const News: React.FC<NewsProps> = () => {
         </IonHeader>
         <IonContent>
           <IonList lines="none">
+          <IonItem routerLink="/home" routerDirection="none">
+              <IonLabel>
+                <IonIcon
+                  icon={homeOutline}
+                  color="success"
+                  slot="start"
+                />{"  "}
+                Inicio
+              </IonLabel>
+            </IonItem>
             <IonItem routerLink="/cuentas" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={walletOutline} color="success" slot="start" />
