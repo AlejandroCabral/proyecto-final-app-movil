@@ -12,7 +12,6 @@ import {
   IonMenuButton,
   IonTitle,
   IonToolbar,
-  IonRow,
 } from "@ionic/react";
 import {
   settingsOutline,
@@ -26,9 +25,6 @@ import {
   powerOutline,
   walletOutline,
   homeOutline,
-  logoTwitter,
-  logoFacebook,
-  logoInstagram,
   fileTraySharp,
 } from "ionicons/icons";
 
