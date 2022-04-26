@@ -8,7 +8,7 @@ const Newss: React.FC = () => {
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
-        <News />
+        <News/>
       </IonContent>
     </IonPage>
   );
