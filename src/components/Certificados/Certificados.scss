@@ -1,3 +1,71 @@
-h1 {
+.header-title-toolbar {
+    ion-title {
+        color: #2b7de9;
+        font-weight: bold;
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+}
+
+.contenedor-main-body {
+    position: relative;
+    top: 25px;
+    width: 75%;
+    height: 100px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
     
+    .icono-main-body {
+        background: #2762AB;
+        width: 32px;
+        height: 100%;
+        border-radius: 5px;
+        ion-icon {
+            font-size: 25px;
+            position: relative;
+            top: 35px;
+            left: 3px;
+            color: white;
+        }
+    }
+
+    .main-body-rightside {
+        position: absolute;
+        top: -5px;
+        left: 40px;
+        h5 {
+            font-weight: bold;
+            color: #2b7de9;
+            font-size: 16px;
+        }
+        p, span {
+            color: #848484;
+            position: relative;
+        }
+
+        p {
+            bottom: 7px;
+        }
+
+        span {
+            bottom: 25px;
+            font-size: 13px;
+        }
+
+        strong {
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.certificados-content {
+    main {
+        background-color: #dcdcdc;
+        height: 100%;
+        position: relative;
+        bottom: 20px;
+    }
 }

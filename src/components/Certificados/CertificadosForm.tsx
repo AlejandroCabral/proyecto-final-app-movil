@@ -26,8 +26,7 @@ import {
   powerOutline,
   walletOutline,
   homeOutline,
-  callOutline,
-  mailOutline
+  fileTraySharp
 } from "ionicons/icons";
 
 interface ContactosProps {}
@@ -171,16 +170,79 @@ const ContactosForm: React.FC<ContactosProps> = () => {
         </IonContent>
       </IonMenu>
 
-      <IonContent>
+      <IonContent className="certificados-content">
         <div id="main-content">
-          <IonHeader class="ion-no-border">
+          <IonHeader class="ion-no-border header-title-toolbar">
             <IonToolbar color="translucent">
               <IonButtons slot="start">
                 <IonMenuButton></IonMenuButton>
+                <IonTitle>Mis Certificados</IonTitle>
               </IonButtons>
             </IonToolbar>
           </IonHeader>
           </div>
+
+          <main>
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
+            </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
+            </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
+            </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
+            </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
+            </div>
+          </main>
       </IonContent>
     </IonApp>
   );
