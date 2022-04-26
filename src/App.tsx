@@ -19,6 +19,8 @@ import Sugerencias from "./pages/Sugerencias";
 import Requests from "./pages/Request_Pass";
 import Ahorro from "./pages/Ahorro";
 import Prestamos from "./pages/Prestamos";
+import Descuentos from "./pages/Descuentos";
+import Solicitudes from "./pages/Solicitudes";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -74,6 +76,12 @@ const App: React.FC = () => (
             </Route>
             <Route exact path="/sugerencias">
               <Sugerencias />
+            </Route>
+            <Route exact path="/solicitudes">
+              <Solicitudes />
+            </Route>
+            <Route exact path="/descuentos">
+              <Descuentos />
             </Route>
             <Route exact path="/">
               <Redirect to="/login" />
