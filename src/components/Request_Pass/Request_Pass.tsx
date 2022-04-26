@@ -1,10 +1,8 @@
 import './Request_Pass.css'
 import '../Login/LoginForm'
-import { personOutline, key } from "ionicons/icons";
+import { key } from "ionicons/icons";
 import { IonIcon, IonInput, IonItem, IonLabel, IonButton } from "@ionic/react";
-import { useState } from "react";
 import LoginForm from '../Login/LoginForm';
-import { useHistory } from "react-router-dom";
 
 interface RequestProps {}
 
