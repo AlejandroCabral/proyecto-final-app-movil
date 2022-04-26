@@ -1,42 +1,36 @@
+import "./Certificados.css";
 import {
-  powerOutline,
-  walletOutline,
-  cashOutline,
-  businessOutline,
-  newspaperOutline,
-  calculatorOutline,
-  earthOutline,
-  folderOpenOutline,
-  helpCircleOutline,
-  homeOutline,
-  settingsOutline
-} from "ionicons/icons";
-import "./HomePage.css";
-import {
-  IonMenu,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonList,
-  IonItem,
   IonIcon,
+  IonItem,
   IonLabel,
   IonApp,
   IonButtons,
+  IonContent,
+  IonHeader,
+  IonList,
+  IonMenu,
   IonMenuButton,
-  IonRow,
+  IonTitle,
+  IonToolbar,
 } from "@ionic/react";
-import React, { useState } from "react";
+import {
+  settingsOutline,
+  businessOutline,
+  calculatorOutline,
+  cashOutline,
+  earthOutline,
+  folderOpenOutline,
+  helpCircleOutline,
+  newspaperOutline,
+  powerOutline,
+  walletOutline,
+  homeOutline,
+  fileTraySharp
+} from "ionicons/icons";
 
-interface HomePageProps {}
+interface ContactosProps {}
 
-const HomePageForm: React.FC<HomePageProps> = () => {
-  let [fecha] = useState<string>();
-
-  let hoy = new Date();
-  fecha = hoy.toLocaleString();
-
+const ContactosForm: React.FC<ContactosProps> = () => {
   return (
     <IonApp className="fade">
       <IonMenu side="start" content-id="main-content">
@@ -128,92 +122,82 @@ const HomePageForm: React.FC<HomePageProps> = () => {
         </IonContent>
       </IonMenu>
 
-      <div id="main-content">
-        <IonHeader class="ion-no-border">
-          <IonToolbar color="translucent">
-            <IonButtons slot="start">
-              <IonMenuButton></IonMenuButton>
-            </IonButtons>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent className="certificados-content">
+        <div id="main-content">
+          <IonHeader class="ion-no-border header-title-toolbar">
+            <IonToolbar color="translucent">
+              <IonButtons slot="start">
+                <IonMenuButton></IonMenuButton>
+                <IonTitle>Mis Certificados</IonTitle>
+              </IonButtons>
+            </IonToolbar>
+          </IonHeader>
+          </div>
 
-        <div className="header-image-2">
-          <img
-            src="https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1"
-            alt="logo"
-          />
-          <p className="parrafo"> Bryan</p>
-          <span id="unSpan">Última conexión: {fecha}</span>
-        </div>
-
-        <section className="body-section">
-          <IonItem className="ion-item-body-section">
-            <div>
-              <h6 className="header-contenedor">
-                <IonIcon color="success" icon={walletOutline} /> Cuentas
-              </h6>
-              <IonRow>
-                <p className="p-body-section">Cuenta Aportaciones</p>
-                <p className="p-body-section-left">Balance disponible</p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
+          <main>
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>GS 999.995.199.199</strong>
+                </div>
             </div>
-          </IonItem>
 
-          <IonItem className="ion-item-body-section">
-            <div>
-              <h6 className="header-contenedor">
-                <IonIcon color="success" icon={businessOutline} /> Certificados
-              </h6>
-              <IonRow>
-                <p className="p-body-section">Certificado Financiero</p>
-                <p className="p-body-section-left-inversiones">
-                  Balance disponible
-                </p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 1401278</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>25,250.00 RD$</strong>
+                </div>
             </div>
-          </IonItem>
 
-          <IonItem className="ion-item-body-section">
-            <div>
-              <h6 className="header-contenedor">
-                <IonIcon color="success" icon={cashOutline} /> Prestamos
-              </h6>
-              <IonRow>
-                <p className="p-body-section">Prestamo Normal</p>
-                <p className="p-body-section-left-prestamos">
-                  Balance disponible
-                </p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
-              <IonRow>
-                <p className="p-body-section">Prestamo Gerencial</p>
-                <p className="p-body-section-left-gerencial">
-                  Balance disponible
-                </p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>AHORROS A LA VISTA</h5>
+                    <p>N° 987574</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>1,005.02 RD$</strong>
+                </div>
             </div>
-          </IonItem>
-        </section>
-      </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>CERTIFICADOS DE DEPÓSITO</h5>
+                    <p>N° 1497274</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>100.00 RD$</strong>
+                </div>
+            </div>
+
+            <div className="contenedor-main-body">
+                <div className="icono-main-body">
+                    <IonIcon icon={fileTraySharp} />
+                </div>
+                <div className="main-body-rightside">
+                    <h5>CERTIFICADOS DE DEPÓSITO</h5>
+                    <p>N° 1401589</p>
+                    <span>JOHN DOE</span><br/>
+                    <strong>500,278.57 RD$</strong>
+                </div>
+            </div>
+          </main>
+      </IonContent>
     </IonApp>
   );
 };
 
-export default HomePageForm;
-
-// https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1
+export default ContactosForm;

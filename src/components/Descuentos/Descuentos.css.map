@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "Cuentas.scss"
+        "Descuentos.scss"
     ],
     "names": [],
-    "file": "Cuentas.css"
+    "file": "Descuentos.css"
 }

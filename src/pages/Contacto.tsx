@@ -1,8 +1,8 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
 import ContactosForm from '../components/Contactos/ContactosForm';
-import './Login.css';
+import './Contacto.css';
 
-const Login: React.FC = () => {
+const Contacto: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -14,4 +14,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Contacto;

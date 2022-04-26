@@ -1,18 +1,16 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import HomePageForm from '../components/HomePage/HomePageForm';
-import './Home.css';
+import SolicitudesForm from '../components/Solicitudes/SolicitudesForm';
 
-const Home: React.FC = () => {
+const Solicitudes: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen scroll-y="true">
-        <HomePageForm />
-
+        <SolicitudesForm />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Solicitudes;

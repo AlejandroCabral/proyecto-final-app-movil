@@ -1,17 +1,19 @@
+import './Ahorro.css'
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import News from '../components/Screen/News';
-import './News.css';
+import AhorroForm from '../components/Ahorro/AhorroForm';
 
-const Newss: React.FC = () => {
+
+
+const Ahorro: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
-        <News/>
+        <AhorroForm />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Newss;
+export default Ahorro;

@@ -1,0 +1,38 @@
+.p-body-section-left-gerencial-orden{
+    font-size: 14px;
+    position: relative;
+  left: 92px;
+  color: #a8a7a7;
+}
+.span-body-section-left-prestamos{
+    position: relative;
+  bottom: 8px;
+  font-size: 13px;
+  left: 150px;
+  font-weight: bold;
+  
+}
+
+.span-body-section-left-prestamos-monto{
+    position: relative;
+  bottom: 8px;
+  font-size: 13px;
+  left: 125px;
+  font-weight: bold;
+}
+
+.span-body-section-left-prestamos-fecha{
+position: relative;
+bottom: 8px;
+  font-size: 13px;
+  left: 150px;
+  font-weight: bold;
+}
+
+.span-body-section-left-prestamos-vencimiento{
+    position: relative;
+    bottom: 8px;
+      font-size: 13px;
+      left: 132px;
+      font-weight: bold;
+    }

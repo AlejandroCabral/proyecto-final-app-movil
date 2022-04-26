@@ -1,0 +1,174 @@
+// * Imports
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// * Variables
+
+$success-color: #3dd67a;
+$green-color: green;
+$font-family: "Roboto", sans-serif;
+
+
+// * Mixins
+@mixin parrafo {
+  font-family: $font-family;
+  font-weight: 600;
+  color: $success-color;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  &::before {
+    content: "Hola";
+    color: #2b7de9;
+  }
+}
+
+@mixin position-body-section($number) {
+  position: relative;
+  left: $number;
+  color: #a8a7a7;
+}
+
+@mixin pictures($opacity) {
+  width: 100%;
+  opacity: $opacity;
+  position: absolute;
+  top: 0;
+  height: 190px;
+}
+
+// * Selectors & stuffs
+
+.header-image-2 {
+  width: 100%;
+
+  img {
+    @include pictures(0.25);
+  }
+
+  .parrafo {
+    margin-top: 2.8em;
+    text-align: center;
+    @include parrafo;
+  }
+}
+
+#unSpan {
+  position: relative;
+  left: 5em;
+  right: 0;
+  bottom: 0.5em;
+  font-size: 14px;
+}
+
+ion-menu-button {
+  color: $green-color;
+  margin-top: 15px;
+}
+
+.body-section-solicitud {
+  padding: {
+    top: 30px;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+  }
+  font-family: $font-family;
+
+  .header-contenedor-solicitud {
+    color: $success-color;
+    font-weight: 600;
+
+    ion-icon {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  .p-body-section-solicitud {
+    color: $success-color;
+  }
+
+  .p-body-section-left-solicitud {
+    @include position-body-section(65px);
+  }
+
+  .p-body-section-left-prestamos-solicitud {
+    @include position-body-section(220px);
+  }
+
+  .p-body-section-left-inversiones-solicitud {
+    @include position-body-section(60px);
+  }
+
+  .p-body-section-left-gerencial-solicitud {
+    @include position-body-section(50px);
+  }
+
+  .p-body-section-solicitud-2 {
+    color: $success-color;
+  }
+
+  .p-body-section-left-solicitud-2 {
+    @include position-body-section(65px);
+  }
+
+  .p-body-section-left-prestamos-solicitud-2 {
+    @include position-body-section(220px);
+  }
+
+  .p-body-section-left-inversiones-solicitud-2 {
+    @include position-body-section(60px);
+  }
+
+  .p-body-section-left-gerencial-solicitud-2 {
+    @include position-body-section(90px);
+  }
+
+  .p-body-section-solicitud,
+  .p-body-section-left-solicitud,
+  .p-body-section-left-inversiones-solicitud,
+  .p-body-section-left-prestamos-solicitud,
+  .p-body-section-left-gerencial-solicitud,
+  .p-body-section-solicitud-2,
+  .p-body-section-left-solicitud-2,
+  .p-body-section-left-inversiones-solicitud-2,
+  .p-body-section-left-prestamos-solicitud-2,
+  .p-body-section-left-gerencial-solicitud-2  {
+    font-size: 13.5px;
+    margin-top: 5px;
+  }
+
+  .span-body-section-left-solicitud {
+    left: 195px;
+    font-weight: bold;
+  }
+
+   .span-body-section-left-solicitud-2 {
+       left: 160px;
+       font-weight: bold;
+   } 
+  .span-body-section-lefts-solicitud {
+    left: 138px;
+    font-weight: bold;
+  }
+
+  .span-body-section-lefts-solicitud-2 {
+      left: 180px;
+      font-weight: bold;
+  }
+
+  .span-body-section-solicitud,
+  .span-body-section-left-solicitud,
+  .span-body-section-lefts-solicitud,
+  .span-body-section-solicitud-2,
+  .span-body-section-left-solicitud-2,
+  .span-body-section-lefts-solicitud-2 {
+    position: relative;
+    bottom: 8px;
+    font-size: 13px;
+  }
+
+  .ion-item-body-section-solicitud, .ion-item-body-section-solicitud-2 {
+    margin-bottom: 25px;
+  }
+}

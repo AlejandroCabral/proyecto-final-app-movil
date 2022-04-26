@@ -13,8 +13,14 @@ import { IonReactRouter } from "@ionic/react-router";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import News from "./pages/News";
-import Cuentas from "./pages/Cuenta";
 import Contactos from "./pages/Contacto";
+import Certificados from "./pages/Certificados";
+import Sugerencias from "./pages/Sugerencias";
+import Requests from "./pages/Request_Pass";
+import Ahorro from "./pages/Ahorro";
+import Prestamos from "./pages/Prestamos";
+import Descuentos from "./pages/Descuentos";
+import Solicitudes from "./pages/Solicitudes";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -34,7 +40,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import { newspaperOutline, callOutline, logoWhatsapp } from "ionicons/icons";
+import { newspaperOutline, callOutline } from "ionicons/icons";
 
 setupIonicReact();
 
@@ -56,8 +62,26 @@ const App: React.FC = () => (
             <Route exact path="/contactos">
               <Contactos />
             </Route>
+            <Route exact path="/certificados">
+              <Certificados />
+            </Route>
             <Route exact path="/cuentas">
-              <Cuentas />
+              <Ahorro />
+            </Route>
+            <Route exact path="/prestamos">
+              <Prestamos />
+            </Route>
+            <Route exact path="/request">
+              <Requests/>
+            </Route>
+            <Route exact path="/sugerencias">
+              <Sugerencias />
+            </Route>
+            <Route exact path="/solicitudes">
+              <Solicitudes />
+            </Route>
+            <Route exact path="/descuentos">
+              <Descuentos />
             </Route>
             <Route exact path="/">
               <Redirect to="/login" />
@@ -72,10 +96,6 @@ const App: React.FC = () => (
           <IonTabButton tab="contactos" href="/contactos" layout="icon-top">
             <IonLabel>Contacto</IonLabel>
             <IonIcon icon={callOutline} color="success" />
-          </IonTabButton>
-          <IonTabButton tab="whatsapp" href="/whatsapp" layout="icon-top">
-            <IonLabel>WhatsApp</IonLabel>
-            <IonIcon icon={logoWhatsapp} color="success" />
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
