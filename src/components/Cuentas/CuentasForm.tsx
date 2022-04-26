@@ -3,10 +3,16 @@ import { IonIcon, IonInput, IonItem, IonLabel, IonButton } from "@ionic/react";
 import { personOutline, key } from "ionicons/icons";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import AhorroForm from '../Ahorro/AhorroForm';
 
 interface CuentasProps {}
 
 const CuentasForm: React.FC<CuentasProps> = () => {
+  return (
+    <div>
+      <a className="reference" href='/ahorro'>Cuentas</a></div>
+  );
+};
   const [text, setText] = useState<string>();
   const [num, setNum] = useState<string>();
   let history = useHistory();
@@ -38,9 +44,6 @@ const CuentasForm: React.FC<CuentasProps> = () => {
   };
 
 
-  return (
-    <div>test</div>
-  );
-};
+  
 
 export default CuentasForm;
