@@ -141,15 +141,10 @@ const ContactosForm: React.FC<ContactosProps> = () => {
                 Ayuda
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/configuracion" routerDirection="none">
+            <IonItem routerLink="/request" routerDirection="none">
               <IonLabel>
-                <IonIcon
-                  icon={settingsOutline}
-                  color="success"
-                  slot="start"
-                ></IonIcon>
-                {"  "}
-                Configuracion
+                <IonIcon icon={settingsOutline} color="success" slot="start"></IonIcon>{"  "}
+                Configuracion(Cambio de contra.)
               </IonLabel>
             </IonItem>
             <IonItem
