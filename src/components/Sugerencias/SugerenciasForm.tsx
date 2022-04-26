@@ -1,4 +1,4 @@
-import "./Certificados.css";
+import "./Sugerencias.css";
 import {
   IonIcon,
   IonItem,
@@ -12,6 +12,7 @@ import {
   IonMenuButton,
   IonTitle,
   IonToolbar,
+  IonRow,
 } from "@ionic/react";
 import {
   settingsOutline,
@@ -25,12 +26,14 @@ import {
   powerOutline,
   walletOutline,
   homeOutline,
-  fileTraySharp
+  logoTwitter,
+  logoFacebook,
+  logoInstagram,
 } from "ionicons/icons";
 
-interface ContactosProps {}
+interface SugerenciasProps {}
 
-const ContactosForm: React.FC<ContactosProps> = () => {
+const SugerenciasForm: React.FC<SugerenciasProps> = () => {
   return (
     <IonApp className="fade">
       <IonMenu side="start" content-id="main-content">
@@ -169,82 +172,89 @@ const ContactosForm: React.FC<ContactosProps> = () => {
         </IonContent>
       </IonMenu>
 
-      <IonContent className="certificados-content">
+      <IonContent scroll-y="true">
         <div id="main-content">
           <IonHeader class="ion-no-border header-title-toolbar">
             <IonToolbar color="translucent">
               <IonButtons slot="start">
                 <IonMenuButton></IonMenuButton>
-                <IonTitle>Mis Certificados</IonTitle>
               </IonButtons>
             </IonToolbar>
           </IonHeader>
+
+          <div className="header-image-5">
+            <img
+              src="https://coopdgii.com/wp-content/uploads/2021/03/Banner.png"
+              alt="logo"
+            />
+            <p>SUGERENCIAS</p>
           </div>
 
-          <main>
-            <div className="contenedor-main-body">
-                <div className="icono-main-body">
-                    <IonIcon icon={fileTraySharp} />
-                </div>
-                <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
-                    <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
-                </div>
-            </div>
+          <main className="main-body-container">
+            <h6>Visita nuestra redes sociales</h6>
+            <span>@coopdgii</span>
 
-            <div className="contenedor-main-body">
-                <div className="icono-main-body">
-                    <IonIcon icon={fileTraySharp} />
+            <div className="square-icons">
+              <IonRow>
+                <div className="facebook">
+                  <a
+                    href="https://www.facebook.com/coopdgii"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IonIcon icon={logoFacebook} />
+                  </a>
                 </div>
-                <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
-                    <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
+                <div className="twitter">
+                  <a
+                    href="https://twitter.com/coopdgii"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IonIcon icon={logoTwitter} />
+                  </a>
                 </div>
-            </div>
-
-            <div className="contenedor-main-body">
-                <div className="icono-main-body">
-                    <IonIcon icon={fileTraySharp} />
+                <div className="instagram">
+                  <a
+                    href="https://www.instagram.com/coopdgii/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IonIcon icon={logoInstagram} />
+                  </a>
                 </div>
-                <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
-                    <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
-                </div>
-            </div>
-
-            <div className="contenedor-main-body">
-                <div className="icono-main-body">
-                    <IonIcon icon={fileTraySharp} />
-                </div>
-                <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
-                    <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
-                </div>
-            </div>
-
-            <div className="contenedor-main-body">
-                <div className="icono-main-body">
-                    <IonIcon icon={fileTraySharp} />
-                </div>
-                <div className="main-body-rightside">
-                    <h5>AHORROS A LA VISTA</h5>
-                    <p>N° 1401274</p>
-                    <span>JOHN DOE</span><br/>
-                    <strong>GS 999.995.199.199</strong>
-                </div>
+              </IonRow>
             </div>
           </main>
+          <footer className="main-footer">
+            <img
+              src="https://coopdgii.com/wp-content/uploads/2019/10/Logo-Pagina-Web1.png"
+              alt="logo coopdgii"
+            />
+
+            <h6>Contactos</h6>
+
+            <p>WhatsApp</p>
+            <span>(849)-451-0798</span>
+
+            <p>Oficina</p>
+            <span>(809)-287-2700</span>
+            <br />
+            <span>info@coopdgii.com</span>
+
+            <div className="loc">
+              <h6>Localización</h6>
+              <span>Av. Pedro Henríquez Ureña #29 Gazcue</span>
+              <br />
+              <span>Santo Domingo</span>
+              <br />
+              <span>República Dominicana</span>
+            </div>
+          </footer>
+        </div>
       </IonContent>
     </IonApp>
   );
 };
 
-export default ContactosForm;
+export default SugerenciasForm;

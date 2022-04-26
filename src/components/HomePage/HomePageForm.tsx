@@ -106,7 +106,7 @@ const HomePageForm: React.FC<HomePageProps> = () => {
                 Sugerencias
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/ayuda" routerDirection="none">
+            <IonItem routerLink="/contactos" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={helpCircleOutline} color="success" slot="start"></IonIcon>{"  "}
                 Ayuda

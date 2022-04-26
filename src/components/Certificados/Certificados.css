@@ -2,8 +2,8 @@
   color: #2b7de9;
   font-weight: bold;
   position: relative;
-  left: 50px;
-  top: 5px;
+  left: 40px;
+  top: 8px;
 }
 
 .contenedor-main-body {
@@ -63,9 +63,9 @@
 }
 
 .certificados-content main {
-  background-color: #dcdcdc;
+  background-color: #ebebeb;
   height: 100%;
   position: relative;
-  bottom: 20px;
+  bottom: 40px;
 }
 /*# sourceMappingURL=Certificados.css.map */
