@@ -17,8 +17,8 @@ import Contactos from "./pages/Contacto";
 import Certificados from "./pages/Certificados";
 import Sugerencias from "./pages/Sugerencias";
 import Requests from "./pages/Request_Pass";
-import AhorroForm from "./components/Ahorro/AhorroForm";
-import PrestamosForm from "./components/Prestamo/PrestamosForm";
+import Ahorro from "./pages/Ahorro";
+import Prestamos from "./pages/Prestamos";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -64,16 +64,12 @@ const App: React.FC = () => (
               <Certificados />
             </Route>
             <Route exact path="/cuentas">
-              <AhorroForm />
+              <Ahorro />
             </Route>
             <Route exact path="/prestamos">
-              <PrestamosForm />
+              <Prestamos />
             </Route>
-
-            <Route exact path="/ahorro">
-              <AhorroForm />
-            </Route>
-            <Route exact path="/request">
+            <Route exact path="/configuracion">
               <Requests/>
             </Route>
             <Route exact path="/sugerencias">

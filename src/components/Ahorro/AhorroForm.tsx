@@ -164,11 +164,11 @@ const AhorroForm: React.FC<AhorroProps> = () => {
                 <span className="span-body-section-left">350,000RD$</span>
               </IonRow>
               <IonRow>
-                <p className="p-body-section">Deposito de ahorros retirables</p>
+                <p className="p-body-section">Deposito de retirables</p>
                 <p className="p-body-section-left">Balance disponible</p>
               </IonRow>
               <IonRow>
-                <span className="span-body-section">0050772228</span>
+                <span className="span-body-section">005077225</span>
                 <span className="span-body-section-left">10.02RD$</span>
               </IonRow>
             </div>
