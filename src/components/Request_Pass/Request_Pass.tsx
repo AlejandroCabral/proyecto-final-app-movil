@@ -1,11 +1,15 @@
 import './Request_Pass.css'
+import '../Login/LoginForm'
 import { personOutline, key } from "ionicons/icons";
 import { IonIcon, IonInput, IonItem, IonLabel, IonButton } from "@ionic/react";
 import { useState } from "react";
+import LoginForm from '../Login/LoginForm';
+import { useHistory } from "react-router-dom";
 
 interface RequestProps {}
 
 const Request: React.FC<RequestProps> = () => {
+ 
     return(
         <div className="container fade">
       <img
@@ -17,11 +21,11 @@ const Request: React.FC<RequestProps> = () => {
       <div className="login-form">
         <IonItem className="ion-item">
           <IonLabel className="ion-label">
-            <IonIcon className="ion-icon" icon={personOutline}></IonIcon>
+            <IonIcon className="ion-icon" icon={key}></IonIcon>
           </IonLabel>
           <IonInput
-            type="text"
-            placeholder="Cédula"
+            type="password"
+            placeholder="Introducir nueva contraseña"
           ></IonInput>
         </IonItem>
 
@@ -31,25 +35,22 @@ const Request: React.FC<RequestProps> = () => {
           </IonLabel>
           <IonInput
             type="password"
-            placeholder="Contraseña"
+            placeholder="Confirmar nueva contraseña"
             
           />
         </IonItem>
-
+        
         <div className="boton">
           <IonButton
             type="submit"
             color="success"
             expand="block"
+            onClick={LoginForm}
           >
-            INICIAR SESIÓN
+            Confirmar
           </IonButton>
         </div>
 
-        <div className="error">
-          <a className="reference" href='/news'>¿Tienes problemas para Iniciar Sesión?</a>
-
-        </div>
       </div>
       <footer className="footer">
       </footer>
