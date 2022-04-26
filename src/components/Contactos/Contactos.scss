@@ -1,3 +1,13 @@
-h1 {
-    list-style: none;
+@mixin pictures($opacity) {
+    width: 100%;
+    opacity: $opacity;
+    position: absolute;
+    top: 0;
+    height: 200px;
+  }
+
+.header-image-3 {
+    img {
+        @include pictures(1);
+    }
 }

@@ -163,6 +163,13 @@ const ContactosForm: React.FC<ContactosProps> = () => {
             </IonButtons>
           </IonToolbar>
         </IonHeader>
+
+        <div className="header-image-3">
+          <img
+            src="https://www.contabilidadtk.es/sites/contabilidadtk.es/files/mujer-contenta-portatil.jpg"
+            alt="logo"
+          />
+        </div>
       </div>
     </IonApp>
   );
