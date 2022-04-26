@@ -163,7 +163,19 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
               </IonRow>
               <IonRow>
                 <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
+                <span className="span-body-section-left">310759.78RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Monto Prestamo:</span>
+                <span className="span-body-section-left-prestamos-monto">555107.390RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Prestamo:</span>
+                <span className="span-body-section-left-prestamos-fecha">22/11/2018</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Vencimiento:</span>
+                <span className="span-body-section-left-prestamos-vencimiento">25/07/2025 </span>
               </IonRow>
               <IonRow>
                 <p className="p-body-section">Prestamo Gerencial</p>
@@ -173,7 +185,41 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
               </IonRow>
               <IonRow>
                 <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
+                <span className="span-body-section-left">125924.79RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Monto Prestamo:</span>
+                <span className="span-body-section-left-prestamos-monto">150126.710RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Prestamo:</span>
+                <span className="span-body-section-left-prestamos-fecha">10/09/2021</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Vencimiento:</span>
+                <span className="span-body-section-left-prestamos-vencimiento">25/02/2025 </span>
+              </IonRow>
+              <IonRow>
+                <p className="p-body-section">Orden de Compra</p>
+                <p className="p-body-section-left-gerencial-orden">
+                  Balance Prestamo
+                </p>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">000000114704</span>
+                <span className="span-body-section-left-prestamos">21,842.55RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Monto Prestamo:</span>
+                <span className="span-body-section-left-prestamos-monto">27500.0000RD$</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Prestamo:</span>
+                <span className="span-body-section-left-prestamos-fecha">27/12/2021</span>
+              </IonRow>
+              <IonRow>
+                <span className="span-body-section">Fecha Vencimiento:</span>
+                <span className="span-body-section-left-prestamos-vencimiento">25/07/2025 </span>
               </IonRow>
               <IonRow>
                 <p className="p-body-section">Orden de Compra</p>
@@ -187,15 +233,15 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
               </IonRow>
               <IonRow>
                 <span className="span-body-section">Monto Prestamo:</span>
-                <span className="span-body-section-left-prestamos-monto">27500.0000RD$</span>
+                <span className="span-body-section-left-prestamos-monto">31000.0000RD$</span>
               </IonRow>
               <IonRow>
                 <span className="span-body-section">Fecha Prestamo:</span>
-                <span className="span-body-section-left-prestamos-fecha">27/12/2021</span>
+                <span className="span-body-section-left-prestamos-fecha">17/08/2021</span>
               </IonRow>
               <IonRow>
                 <span className="span-body-section">Fecha Vencimiento:</span>
-                <span className="span-body-section-left-prestamos-vencimiento">25/07/2025 </span>
+                <span className="span-body-section-left-prestamos-vencimiento">25/08/2022</span>
               </IonRow>
             </div>
           </IonItem>
