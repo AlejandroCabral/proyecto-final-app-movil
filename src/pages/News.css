@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-.Container{
-    border: 6px solid #c1c0c1;
+.Container-P{
+    border: 5px solid #c1c0c1;
     background-color: white;
     padding: 50px;
-    margin: 60px;
+    margin: 50px;
+}
+
+.elementor-post__read-more{
+
+    color:#61D2BA;
 }

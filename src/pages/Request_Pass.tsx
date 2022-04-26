@@ -1,17 +1,17 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import News from '../components/Screen/News';
-import './News.css';
+import Request from '../components/Request_Pass/Request_Pass';
+import './Request_Pass.css';
 
-const Newss: React.FC = () => {
+const Requests: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
-        <News/>
+        <Request/>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Newss;
+export default Requests;
