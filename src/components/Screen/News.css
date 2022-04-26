@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.Container-Mella{
-    border: 1px solid #c1c0c1;
+.Container-mella{
+    border: 6px solid #c1c0c1;
     background-color: white;
-    
+    padding: 50px;
+    margin: 60px;
 }
+

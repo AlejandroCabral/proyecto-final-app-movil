@@ -168,7 +168,6 @@ const News: React.FC<NewsProps> = () => {
         </IonContent>
       </IonMenu>
 
-      
       <IonContent>
         <div id="main-content">
           <IonHeader class="ion-no-border">

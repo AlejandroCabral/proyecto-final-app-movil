@@ -1,38 +1,41 @@
 import {
-  powerOutline,
-  walletOutline,
-  cashOutline,
-  businessOutline,
-  newspaperOutline,
-  calculatorOutline,
-  earthOutline,
-  folderOpenOutline,
-  helpCircleOutline,
-  homeOutline,
-  settingsOutline
-} from "ionicons/icons";
-import "./HomePage.css";
-import {
-  IonMenu,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonList,
-  IonItem,
-  IonIcon,
-  IonLabel,
-  IonApp,
-  IonButtons,
-  IonMenuButton,
-  IonRow,
-} from "@ionic/react";
-import React, { useState } from "react";
+    powerOutline,
+    walletOutline,
+    cashOutline,
+    businessOutline,
+    newspaperOutline,
+    calculatorOutline,
+    earthOutline,
+    folderOpenOutline,
+    helpCircleOutline,
+    homeOutline,
+    settingsOutline
+  } from "ionicons/icons";
+  import "./Ahorro.css";
+  import {
+    IonMenu,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonList,
+    IonItem,
+    IonIcon,
+    IonLabel,
+    IonApp,
+    IonButtons,
+    IonMenuButton,
+    IonRow,
+  } from "@ionic/react";
+  import React, { useState } from "react";
 
-interface HomePageProps {}
 
-const HomePageForm: React.FC<HomePageProps> = () => {
-  let [fecha] = useState<string>();
+
+
+interface AhorroProps {}
+
+const AhorroForm: React.FC<AhorroProps> = () => {
+    let [fecha] = useState<string>();
 
   let hoy = new Date();
   fecha = hoy.toLocaleString();
@@ -106,7 +109,7 @@ const HomePageForm: React.FC<HomePageProps> = () => {
                 Sugerencias
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/contactos" routerDirection="none">
+            <IonItem routerLink="/ayuda" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={helpCircleOutline} color="success" slot="start"></IonIcon>{"  "}
                 Ayuda
@@ -160,51 +163,13 @@ const HomePageForm: React.FC<HomePageProps> = () => {
                 <span className="span-body-section">1000005</span>
                 <span className="span-body-section-left">350,000RD$</span>
               </IonRow>
-            </div>
-          </IonItem>
-
-          <IonItem className="ion-item-body-section">
-            <div>
-              <h6 className="header-contenedor">
-                <IonIcon color="success" icon={businessOutline} /> Certificados
-              </h6>
               <IonRow>
-                <p className="p-body-section">Certificado Financiero</p>
-                <p className="p-body-section-left-inversiones">
-                  Balance disponible
-                </p>
+                <p className="p-body-section">Deposito de ahorros retirables</p>
+                <p className="p-body-section-left">Balance disponible</p>
               </IonRow>
               <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
-            </div>
-          </IonItem>
-
-          <IonItem className="ion-item-body-section">
-            <div>
-              <h6 className="header-contenedor">
-                <IonIcon color="success" icon={cashOutline} /> Prestamos
-              </h6>
-              <IonRow>
-                <p className="p-body-section">Prestamo Normal</p>
-                <p className="p-body-section-left-prestamos">
-                  Balance disponible
-                </p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
-              </IonRow>
-              <IonRow>
-                <p className="p-body-section">Prestamo Gerencial</p>
-                <p className="p-body-section-left-gerencial">
-                  Balance disponible
-                </p>
-              </IonRow>
-              <IonRow>
-                <span className="span-body-section">1000005</span>
-                <span className="span-body-section-left">350,000RD$</span>
+                <span className="span-body-section">0050772228</span>
+                <span className="span-body-section-left">10.02RD$</span>
               </IonRow>
             </div>
           </IonItem>
@@ -214,6 +179,4 @@ const HomePageForm: React.FC<HomePageProps> = () => {
   );
 };
 
-export default HomePageForm;
-
-// https://i1.wp.com/www.revistamercado.do/wp-content/uploads/2021/05/mujer-contadora.jpg?fit=1280%2C638&ssl=1
+export default AhorroForm;
