@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import News from "./pages/News";
 import Cuentas from "./pages/Cuenta";
 import Contactos from "./pages/Contacto";
+import Requests from "./pages/Request_Pass";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -58,6 +59,9 @@ const App: React.FC = () => (
             </Route>
             <Route exact path="/cuentas">
               <Cuentas />
+            </Route>
+            <Route exact path="/request">
+              <Requests/>
             </Route>
             <Route exact path="/">
               <Redirect to="/login" />

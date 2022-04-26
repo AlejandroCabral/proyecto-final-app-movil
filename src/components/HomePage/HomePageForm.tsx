@@ -8,6 +8,8 @@ import {
   earthOutline,
   folderOpenOutline,
   helpCircleOutline,
+  homeOutline,
+  settingsOutline
 } from "ionicons/icons";
 import "./HomePage.css";
 import {
@@ -48,6 +50,16 @@ const HomePageForm: React.FC<HomePageProps> = () => {
         </IonHeader>
         <IonContent>
           <IonList lines="none">
+            <IonItem routerLink="/home" routerDirection="none">
+              <IonLabel>
+                <IonIcon
+                  icon={homeOutline}
+                  color="success"
+                  slot="start"
+                />{"  "}
+                Inicio
+              </IonLabel>
+            </IonItem>
             <IonItem routerLink="/cuentas" routerDirection="none">
               <IonLabel>
                 <IonIcon
@@ -98,6 +110,12 @@ const HomePageForm: React.FC<HomePageProps> = () => {
               <IonLabel>
                 <IonIcon icon={helpCircleOutline} color="success" slot="start"></IonIcon>{"  "}
                 Ayuda
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/request" routerDirection="none">
+              <IonLabel>
+                <IonIcon icon={settingsOutline} color="success" slot="start"></IonIcon>{"  "}
+                Configuracion
               </IonLabel>
             </IonItem>
             <IonItem routerLink="/login" routerDirection="none" className="boton-cerrar-sesion">
