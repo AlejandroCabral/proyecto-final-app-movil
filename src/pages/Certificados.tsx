@@ -1,17 +1,17 @@
 import { IonContent, IonHeader, IonPage } from '@ionic/react';
-import CuentasForm from '../components/Cuentas/CuentasForm';
-import './Cuenta.css';
+import CertificadosForm from '../components/Certificados/CertificadosForm';
+import './Certificados.css';
 
-const Cuenta: React.FC = () => {
+const Certificado: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
       </IonHeader>
       <IonContent fullscreen>
-        <CuentasForm />
+        <CertificadosForm />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Cuenta;
+export default Certificado;
