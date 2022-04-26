@@ -73,7 +73,7 @@ const SugerenciasForm: React.FC<SugerenciasProps> = () => {
                   slot="start"
                 ></IonIcon>
                 {"  "}
-                Prestamos
+                Préstamos
               </IonLabel>
             </IonItem>
             <IonItem routerLink="/certificados" routerDirection="none">
@@ -142,7 +142,7 @@ const SugerenciasForm: React.FC<SugerenciasProps> = () => {
                 Ayuda
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/configuracion" routerDirection="none">
+            <IonItem routerLink="/request" routerDirection="none">
               <IonLabel>
                 <IonIcon
                   icon={settingsOutline}
@@ -150,7 +150,7 @@ const SugerenciasForm: React.FC<SugerenciasProps> = () => {
                   slot="start"
                 ></IonIcon>
                 {"  "}
-                Configuracion
+                Configuración (Cambio de pass)
               </IonLabel>
             </IonItem>
             <IonItem

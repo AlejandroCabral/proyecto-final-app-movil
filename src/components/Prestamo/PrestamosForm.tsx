@@ -76,7 +76,7 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
             <IonItem routerLink="/prestamos" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={cashOutline} color="success" slot="start"></IonIcon>{"  "}
-                  Prestamos
+                  Préstamos
               </IonLabel>
             </IonItem>
             <IonItem routerLink="/certificados" routerDirection="none">
@@ -109,7 +109,7 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
                 Sugerencias
               </IonLabel>
             </IonItem>
-            <IonItem routerLink="/ayuda" routerDirection="none">
+            <IonItem routerLink="/contactos" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={helpCircleOutline} color="success" slot="start"></IonIcon>{"  "}
                 Ayuda
@@ -118,7 +118,7 @@ const PrestamosForm: React.FC<PrestamosProps> = () => {
             <IonItem routerLink="/request" routerDirection="none">
               <IonLabel>
                 <IonIcon icon={settingsOutline} color="success" slot="start"></IonIcon>{"  "}
-                Configuracion(Cambio de contra.)
+                Configuración (Cambio de pass)
               </IonLabel>
             </IonItem>
             <IonItem routerLink="/login" routerDirection="none" className="boton-cerrar-sesion">
